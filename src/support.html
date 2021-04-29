@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp Template</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  </head>
+  <body>
+    <section class="section-sidebar"> 
+      <div class="sidebar-overlay"> </div>
+      <div class="sidebar-main">
+        <div class="sidebar-header d-flex align-items-center justify-content-between"><span class="header-title">Google Help </span><img class="header-icon" src="./assets/icons/icon-close-gray.svg" alt=""></div>
+        <div class="sidebar-content"> 
+          <div class="lists-group"><a class="list-link" href="#">Help Center</a><a class="list-link" href="#">Community</a><a class="list-link" href="#">Google Drive</a></div>
+          <div class="lists-group"><a class="list-link" href="#">Privacy Policy</a><a class="list-link" href="#">Terms of Service</a><a class="list-link" href="#">Submit feedback</a></div>
+        </div>
+      </div>
+    </section>
+    <header class="header"> 
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="header-item d-flex align-items-center">
+              <button class="button-component only-icon header-btn-sidebar d-flex align-items-center justify-content-center" data-delay="{ &quot;show&quot;: 500, &quot;hide&quot;: 0 }" data-toggle="tooltip" data-placement="bottom" title="Main menu"><img class="button-icon" src="./assets/icons/icon-bar-gray.svg" alt="">
+              </button><a class="header-logo" href="#">Google Help</a>
+        </div>
+        <div class="header-item d-flex align-items-center">
+          <div class="dropdown" data-delay="{ &quot;show&quot;: 500, &quot;hide&quot;: 0 }" data-toggle="tooltip" data-placement="bottom" title="Google apps">
+                <button class="button-component only-icon header-btn-menu d-flex align-items-center justify-content-center" type="button" id="dropdownHeaderMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="button-icon" src="./assets/icons/icon-menu-dots-gray.svg" alt="">
+                </button>
+            <div class="dropdown-menu dropdown-header-menu dropdown-menu-right" aria-labelledby="dropdownHeaderMenu">
+              <div class="header-menu-wrapper d-flex flex-wrap"> 
+                <div class="menu-item">
+                  <div class="avatar"> <img src="./assets/images/image-avatar.png" alt=""></div><span class="menu-title">Account</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google.png"></div><span class="menu-title">Search</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-youtube.png"></div><span class="menu-title">Youtube</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-play.png"></div><span class="menu-title">Play</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-news.png"></div><span class="menu-title">News</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-mail.png"></div><span class="menu-title">Gmail</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-meet.png"></div><span class="menu-title">Meet</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-messages.png"></div><span class="menu-title">Chat</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-contacts.png"></div><span class="menu-title">Contacts</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-drive.png"></div><span class="menu-title">Drive</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-calendar.png"></div><span class="menu-title">Calendar</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-google-translate.png"></div><span class="menu-title">Translate</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-photo.png"></div><span class="menu-title">Photos</span>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-icon"> <img src="./assets/images/32px/image-duo.png"></div><span class="menu-title">Duo</span>
+                </div>
+              </div>
+              <div class="line"> </div>
+              <div class="button-groups d-flex justify-content-center">
+                    <button class="button-component white-outline text-blue medium d-flex align-items-center justify-content-center"><span class="button-title">More from Google</span>
+                    </button>
+              </div>
+            </div>
+          </div>
+          <div class="avatar" data-toggle="tooltip" data-placement="bottom" data-html="true" title="&lt;p class=&quot;mb-0 text-left&quot;&gt;Goolge Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;My Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;myaccount@gmail.com&lt;/p&gt;"><img src="./assets/images/image-avatar.png" alt=""></div>
+        </div>
+      </div>
+    </header>
+    <section class="section-link-redirect d-flex justify-content-end"> <a class="link-redirect align-items-center" href="#">Google <img src="./assets/icons/icon-arrow-square-gray.svg" alt=""></a></section>
+    <section class="section-notification"> 
+      <p>As a precautionary health measure for our support specialists in light of COVID-19, we're operating with a limited team. If you need help with a product whose support you had trouble reaching over the phone, consult its <a href="#">product-specific Help Center</a></p>
+    </section>
+    <section class="section-banner"> <img class="section-bg" src="./assets/images/image-banner.svg" alt="">
+      <div class="section-wrapper"> 
+        <div class="banner-logo"> <img src="./assets/icons/icon-google.svg" alt=""></div>
+        <h2 class="banner-title text-center">How can I help you ?</h2>
+        <form class="banner-form" action="#">
+          <div class="form-group"> 
+            <div class="form-item d-flex align-items-center">
+                  <button class="button-component only-icon d-flex align-items-center justify-content-center"><img class="button-icon" src="./assets/icons/icon-search-gray.svg" alt="">
+                  </button>
+              <input type="text" placeholder="Describle your issue">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="button-groups d-flex justify-content-center" style="padding: 0 10px;">
+          <button class="button-component small white-outline radius d-flex align-items-center justify-content-center"><img class="button-icon" src="./assets/icons/icon-google.svg" alt=""><span class="button-title">Read about Google's response to COVID-19</span>
+          </button>
+    </div>
+    <section class="section-tab-supports">
+      <div class="section-wrapper"> 
+        <div class="supports-wrapper mb-5" id="accordion">
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between" id="heading0" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"><span class="header-title">Get started with Google Drive</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body show collapse" id="collapse0" aria-labelledby="heading0" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">How to use Google Drive</a></li>
+                <li> <a href="#">System erquirements and browsers</a></li>
+                <li> <a href="#">Use Google Drive files offline</a></li>
+                <li> <a href="#">Buy more Google storage</a></li>
+                <li> <a href="#">Manage files in your Google Drive storage</a></li>
+                <li> <a href="#">Accessibility</a></li>
+                <li> <a href="#">Use Dark theme in Google Drive</a></li>
+                <li> <a href="#">Upcoming changes to how you Google storage works</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span class="header-title">Store files in Google Drive</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse1" aria-labelledby="heading1" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Upload files and folders to Google Drive</a></li>
+                <li> <a href="#">Download a file</a></li>
+                <li> <a href="#">Files you can store in Google Drive</a></li>
+                <li> <a href="#">View &amp; open files</a></li>
+                <li> <a href="#">Store and play video in Google Drive</a></li>
+                <li> <a href="#">Save, edit &amp; share Microsoft Office files</a></li>
+                <li> <a href="#">Save web content to Google Drive</a></li>
+                <li> <a href="#">Convert PDF and photo files to text</a></li>
+                <li> <a href="#">Fill out PDF forms in Google Drive</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading2" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span class="header-title">Organize and find your files</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse2" aria-labelledby="heading2" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Organize your files in Google Drive</a></li>
+                <li> <a href="#">Delete and restore files in Google Drive</a></li>
+                <li> <a href="#">Find or recover a file</a></li>
+                <li> <a href="#">Find files in Google Drive</a></li>
+                <li> <a href="#">Reorder your files</a></li>
+                <li> <a href="#">View activity &amp; file versions</a></li>
+                <li> <a href="#">Use Google Drive apps</a></li>
+                <li> <a href="#">Get Google Drive notifications</a></li>
+                <li> <a href="#">Find files &amp; folders with Google Drive shortcuts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span class="header-title">Share files with Google Drive</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse3" aria-labelledby="heading3" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Share files from Google Drive</a></li>
+                <li> <a href="#">Stop, limit, or change sharing</a></li>
+                <li> <a href="#">Make someone else the owner of your file</a></li>
+                <li> <a href="#">Share folders in Google Drive</a></li>
+                <li> <a href="#">Store &amp; share files or folders with shared drives</a></li>
+                <li> <a href="#">Anonymous or unknown people in a file</a></li>
+                <li> <a href="#">Share documents with visitors</a></li>
+                <li> <a href="#">Get approvals on files in Google Drive</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><span class="header-title">Sync files to your computer</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse4" aria-labelledby="heading4" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Compare Backup and Sync &amp; Google Drive for desktop</a></li>
+                <li> <a href="#">Back up &amp; sync files with Google Drive</a></li>
+                <li> <a href="#">Stop syncing Google Drive files with Backup and Sync</a></li>
+                <li> <a href="#">Fix problems syncing to your computer</a></li>
+                <li> <a href="#">Upcoming changes to Google Drive sync clients</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"><span class="header-title">Docs, Sheets, Slides, and other apps</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse5" aria-labelledby="heading5" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Add photos &amp; videos from Google Drive to Google Photos</a></li>
+                <li> <a href="#">Use Google products side by side</a></li>
+                <li> <a href="#">Back up iPhone data with Google Drive</a></li>
+                <li> <a href="#">Save, edit &amp; share Microsoft Office files</a></li>
+                <li> <a href="#">Use Google Drive with Yahoo Mail</a></li>
+                <li> <a href="#">Manage your maps in Google Drive</a></li>
+                <li> <a href="#">Manage &amp; restore your mobile backups in Google Drive</a></li>
+                <li> <a href="#">Use Google Drive apps</a></li>
+                <li> <a href="#">See Google Drive activity in Slack</a></li>
+                <li> <a href="#">Use Google Docs, Sheets &amp; Slides with Box, Dropbox, or Egnyte</a></li>
+                <li> <a href="#">Work with Microsoft Office files</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"><span class="header-title">Privacy, policies, and offers</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse6" aria-labelledby="heading6" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Google Drive Terms of Service</a></li>
+                <li> <a href="#">Abuse Program Policies and Enforcement</a></li>
+                <li> <a href="#">Report a violation</a></li>
+                <li> <a href="#">Request a review of a violation</a></li>
+                <li> <a href="#">Purchase, cancellation &amp; refund policies</a></li>
+                <li> <a href="#">Privacy and policies</a></li>
+                <li> <a href="#">Export your data from Google Docs, Sheets, Slides, Drawings, Sites, Drive, Forms &amp; Jamboard</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="item-header d-flex align-items-center justify-content-between collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"><span class="header-title">Fix a problem</span><img class="header-icon" src="./assets/icons/icon-angle-down-blue.svg" alt=""></div>
+            <div class="item-body collapse" id="collapse7" aria-labelledby="heading7" data-parent="#accordion">
+              <ul class="lists-item-supports"> 
+                <li> <a href="#">Find or recover a file</a></li>
+                <li> <a href="#">Fix common issues in Google Drive</a></li>
+                <li> <a href="#">Fix problems syncing to your computer</a></li>
+                <li> <a href="#">Contact Google Drive support</a></li>
+                <li> <a href="#">Fix payment issues</a></li>
+                <li> <a href="#">Change or cancel storage plans</a></li>
+                <li> <a href="#">Manage files in your Google Drive storage</a></li>
+                <li> <a href="#">Can't sign in to your Google Account</a></li>
+                <li> <a href="#">Issues editing Google Docs, Sheets, Slides &amp; Forms</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="support-more-help"> 
+          <h2 class="text-center">Need more help?</h2>
+          <p class="text-center mb-4"> Try these next steps:</p>
+          <div class="row"> 
+            <div class="col-md-6 mb-3">
+              <div class="support-card d-flex align-items-start"> 
+                <div class="card-icon"> <img src="./assets/icons/icon-chat-white.svg" alt=""></div>
+                <div class="card-content"> 
+                  <h5>Ask the Help Community </h5>
+                  <p>Get answers from community experts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="support-card d-flex align-items-start"> 
+                <div class="card-icon"> <img src="./assets/icons/icon-headphone-white.svg" alt=""></div>
+                <div class="card-content"> 
+                  <h5>Contact us</h5>
+                  <p>Tell us more and we’ll help you get there</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"> 
+      <div class="footer-wrapper d-flex justify-content-between align-items-center">
+        <div class="footer-item d-flex align-items-center">
+          <p class="mr-3">©2021 Google - <a href="#">Privacy Policy</a> - <a href="#">Terms of Service </a></p>
+          <form action="#">
+            <select class="custom-select">
+              <option value="#">English</option>
+              <option value="#">Vietnamese</option>
+            </select>
+          </form>
+        </div>
+        <div class="footer-item d-flex align-items-center">
+              <button class="button-component only-icon big mr-md-3 d-flex align-items-center justify-content-center"><img class="button-icon" src="./assets/icons/icon-day-night-gray.png" alt="">
+              </button>
+              <button class="button-component white-outline text-blue medium d-flex align-items-center justify-content-center"><img class="button-icon" src="./assets/icons/icon-chat-blue.svg" alt=""><span class="button-title">Send feedback about our Help Center</span>
+              </button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"> </script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

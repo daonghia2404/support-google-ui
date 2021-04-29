@@ -1,0 +1,113 @@
+.section-tab-supports {
+  padding: 30px 0;
+  .section-wrapper {
+    padding: 0 10px;
+    max-width: 830px;
+    margin: 0 auto;
+    .supports-wrapper {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid $border;
+      .support-item {
+        &:not(:last-of-type) {
+          border-bottom: 1px solid $border;
+        }
+        .item-header {
+          background: $white;
+          padding: 16px 30px 16px 64px;
+          cursor: pointer;
+          @media (max-width: 768px) {
+            padding: 16px 30px;
+          }
+          
+          &.collapsed {
+            .header-icon {
+              transform: rotate(0);
+            }
+          }
+          .header-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: $text-black;
+          }
+          .header-icon {
+            width: 11px;
+            transform: rotate(180deg);
+          }
+        }
+        .item-body {
+          padding: 8px 0;
+          background: $blue-light;
+          .lists-item-supports {
+            margin-bottom: 0;
+            a {
+              display: block;
+              font-size: 14px;
+              padding: 8px 64px;
+              color: $gray-dark;
+              font-family: 'Roboto', sans-serif;
+              @media (max-width: 768px) {
+                padding: 8px 30px;
+              }
+              &:hover {
+                background: $blue-light-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+    .support-more-help {
+      padding: 48px 64px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid $border;
+      @media (max-width: 768px) {
+        padding: 30px 15px;
+      }
+      h2 {
+        font-size: 24px;
+        color: $text-black;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: $gray-dark;
+      }
+      .support-card {
+        padding: 16px;
+        @include box-shadow-2;
+        border-radius: 8px;
+        background: $white;
+        height: 100%;
+        .card-icon {
+          flex: 0 0 30px;
+          max-width: 30px;
+          height: 30px;
+          background: $blue;
+          border-radius: 50%;
+          margin-right: 10px;
+          display: flex;
+          img {
+            width: 15px;
+            margin: auto;
+          }
+        }
+        .card-content {
+          h5 {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: $text-black;
+            font-weight: 600;
+          }
+          p {
+            color: $gray;
+            margin-bottom: 0;
+          }
+        }
+      }
+      
+    }
+  }
+}

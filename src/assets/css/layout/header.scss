@@ -1,0 +1,80 @@
+header.header {
+  padding: 8px 16px;
+  margin-bottom: 24px;
+  @media (max-width: 768px) {
+    padding: 8px 10px;
+  }
+  .header-wrapper {
+    position: relative;
+    height: 48px;
+    .header-item {
+      .header-logo {
+        color: $gray;
+        font-size: 20px;
+
+        @media (max-width: 768px) {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+      }
+      .header-btn-menu,
+      .header-btn-sidebar {
+        margin-right: 15px;
+      }
+      .header-btn-menu {
+        @media (max-width: 768px) {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-header-menu {
+  width: 300px;
+  border-radius: 10px;
+  max-height: 480px;
+  padding: 15px 0;
+  overflow: auto;
+  @include box-shadow;
+  .header-menu-wrapper {
+    .menu-item {
+      flex: 0 0 calc(100% / 3 - 15px);
+      max-width: calc(100% / 3 - 15px);
+      margin: 0 7.5px;
+      border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+      margin-bottom: 10px;
+
+      &:hover {
+        background: $blue-light;
+      }
+      .avatar,
+      .menu-icon {
+        margin: 0 auto;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
+      .menu-title {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        color: $gray-dark;
+      }
+    }
+  }
+  .button-groups {
+    .button-component {
+      padding: 10px 15px;
+    }
+  }
+}

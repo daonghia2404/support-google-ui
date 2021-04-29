@@ -1,0 +1,65 @@
+include ../common/data-products.pug
+
+section.section-products 
+  .section-wrapper 
+    .products-google-wrapper.d-flex.flex-wrap
+      each item in dataGoogleProducts
+        a(href=`${item.link}`).product-item.vertical
+          img(src=`${item.icon}`, alt="").item-icon
+          span.item-title= item.title
+    
+    .line-expand 
+      .line 
+      .circle.d-flex
+        img(src="./assets/icons/icon-angle-down-blue.svg", alt="")
+
+    .expand-groups 
+      .products-consumer-wrapper 
+        h3.product-title.text-center Consumer
+        .products-consumer.d-flex.flex-wrap
+          each item in dataConsumerProducts
+            a(href=`${item.link}`).product-item.horizontal
+              img(src=`${item.icon}`, alt="").item-icon
+              span.item-title= item.title
+
+      .products-business-wrapper 
+        h3.product-title.text-center Business
+        .products-consumer.d-flex.flex-wrap
+          each item in dataBusiness
+            a(href=`${item.link}`).product-item.horizontal
+              img(src=`${item.icon}`, alt="").item-icon
+              span.item-title= item.title
+
+      .products-developer-wrapper 
+        h3.product-title.text-center Developer
+        .products-consumer.d-flex.flex-wrap
+          each item in dataDeveloper
+            a(href=`${item.link}`).product-item.horizontal
+              img(src=`${item.icon}`, alt="").item-icon
+              span.item-title= item.title
+
+    .list-additional-resources
+      .row 
+        .col-md-4
+          .list-item
+            h6.item-title Your account
+            ul 
+              li #[a(href="#") Can't access your account?]
+              li #[a(href="#") Recent transactions with Google]
+              li #[a(href="#") Useful stuff you can do with Google]
+        .col-md-4
+          .list-item
+            h6.item-title Help Communities
+            ul 
+              li #[p Learn more about]
+              li #[a(href="#") Google's Product Experts Program]
+        .col-md-4
+          .list-item 
+            h6.item-title Status dashboard
+            p If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can check for outages and downtime on the #[a(href="#") G Suite Status Dashboard]. 
+
+          
+          
+
+          
+

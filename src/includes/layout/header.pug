@@ -1,0 +1,48 @@
+include ../components/button.pug
+
+-
+  const dataMenu = [
+    { title: 'Search', icon: './assets/images/32px/image-google.png' },
+    { title: 'Youtube', icon: './assets/images/32px/image-youtube.png' },
+    { title: 'Play', icon: './assets/images/32px/image-google-play.png' },
+    { title: 'News', icon: './assets/images/32px/image-google-news.png' },
+    { title: 'Gmail', icon: './assets/images/32px/image-google-mail.png' },
+    { title: 'Meet', icon: './assets/images/32px/image-google-meet.png' },
+    { title: 'Chat', icon: './assets/images/32px/image-google-messages.png' },
+    { title: 'Contacts', icon: './assets/images/32px/image-contacts.png' },
+    { title: 'Drive', icon: './assets/images/32px/image-google-drive.png' },
+    { title: 'Calendar', icon: './assets/images/32px/image-google-calendar.png' },
+    { title: 'Translate', icon: './assets/images/32px/image-google-translate.png' },
+    { title: 'Photos', icon: './assets/images/32px/image-photo.png' },
+    { title: 'Duo', icon: './assets/images/32px/image-duo.png' },
+  ]
+
+header.header 
+  .header-wrapper.d-flex.align-items-center.justify-content-between
+    .header-item.d-flex.align-items-center
+      +Button({ icon: './assets/icons/icon-bar-gray.svg', className: 'only-icon header-btn-sidebar', tooltip: { title: 'Main menu', placement: 'bottom' } })
+      a(href="#").header-logo Google Help
+
+    .header-item.d-flex.align-items-center
+      .dropdown(data-delay=`{ "show": 500, "hide": 0 }` data-toggle="tooltip" data-placement=`bottom` title=`Google apps`)
+        +Button({ icon: './assets/icons/icon-menu-dots-gray.svg', className: 'only-icon header-btn-menu', idDropdown: 'dropdownHeaderMenu' })
+        .dropdown-menu.dropdown-header-menu.dropdown-menu-right(aria-labelledby="dropdownHeaderMenu")
+          .header-menu-wrapper.d-flex.flex-wrap 
+            .menu-item
+              .avatar 
+                img(src="./assets/images/image-avatar.png", alt="")
+              span.menu-title Account
+            each item in dataMenu
+              .menu-item
+                .menu-icon 
+                  img(src=`${item.icon}`)
+                span.menu-title= item.title
+          
+          .line 
+
+          .button-groups.d-flex.justify-content-center
+            +Button({ className: 'white-outline text-blue medium', title: 'More from Google' })
+
+      .avatar(data-toggle="tooltip" data-placement=`bottom` data-html="true" title=`<p class="mb-0 text-left">Goolge Account</p><p class="mb-0 text-left gray-light-color">My Account</p><p class="mb-0 text-left gray-light-color">myaccount@gmail.com</p>`)
+        img(src="./assets/images/image-avatar.png", alt="")
+

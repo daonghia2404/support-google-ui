@@ -1,0 +1,67 @@
+.section-banner {
+  margin: 24px 0 16px;
+  height: 305px;
+  position: relative;
+  @media (max-width: 575px) {
+    height: auto;
+  }
+  .section-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 0 10px;
+  }
+  .section-bg {
+    @include fullAbsolute;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+  }
+  .banner-logo {
+    width: 56px;
+    height: 56px;
+    background: $white;
+    padding: 8px;
+    border-radius: 50%;
+    @include box-shadow-2;
+    margin: 0 auto 18px; 
+    img {
+      width: 100%;
+    }
+  }
+  .banner-title {
+    font-size: 32px;
+    color: $link;
+    margin-bottom: 24px;
+    @media (max-width: 575px) {
+      font-size: 28px;
+    }
+  }
+  .banner-form {
+    max-width: 520px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: $white;
+    @include box-shadow-2;
+    padding: 0 30px;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    .button-component {
+      flex: 0 0 40px;
+      max-width: 40px;
+    }
+    input {
+      height: 48px;
+      padding: 0;
+      outline: none;
+      border: none;
+      width: 100%;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+include ../components/button.pug
+
+section.section-banner 
+  img(src="./assets/images/image-banner.svg", alt="").section-bg
+  .section-wrapper 
+    .banner-logo 
+      img(src="./assets/icons/icon-google.svg", alt="")
+    h2.banner-title.text-center How can I help you ?
+    form(action="#").banner-form
+      .form-group 
+        .form-item.d-flex.align-items-center
+          +Button({ icon: './assets/icons/icon-search-gray.svg', className: 'only-icon' })
+          input(type="text" placeholder="Describle your issue")
+
+
+.button-groups.d-flex.justify-content-center(style="padding: 0 10px;")
+  +Button({ icon: './assets/icons/icon-google.svg', className: 'small white-outline radius', title: `Read about Google's response to COVID-19` })

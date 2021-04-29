@@ -1,0 +1,817 @@
+-
+  const dataGoogleProducts = [
+    {
+      title: 'Google Chrome',
+      link: '#',
+      icon: './assets/images/image-chrome.png',
+    },
+    {
+      title: 'Google Account',
+      link: '#',
+      icon: './assets/images/image-google-account.png',
+    },
+    {
+      title: 'Youtube',
+      link: '#',
+      icon: './assets/images/image-youtube.png',
+    },
+    {
+      title: 'Gmail',
+      link: '#',
+      icon: './assets/images/image-mail-m.png',
+    },
+    {
+      title: 'Google Play',
+      link: '#',
+      icon: './assets/images/image-google-play.png',
+    },
+    {
+      title: 'Google Search',
+      link: '#',
+      icon: './assets/icons/icon-google.svg',
+    },
+    {
+      title: 'AdSense',
+      link: '#',
+      icon: './assets/images/image-ad-sense.png',
+    },
+    {
+      title: 'Pixel Phone',
+      link: '#',
+      icon: './assets/images/image-pixel-phone.png',
+    },
+    {
+      title: 'Google Maps',
+      link: '#',
+      icon: './assets/images/image-google-map.png',
+    },
+    {
+      title: 'Google Cloud',
+      link: '#',
+      icon: './assets/icons/icon-google.svg',
+    },
+    {
+      title: 'Google Ads',
+      link: '#',
+      icon: './assets/images/image-google-ads.png',
+    },
+    {
+      title: 'Google Photos',
+      link: '#',
+      icon: './assets/images/image-google-photo.png',
+    },
+    {
+      title: 'Google For Families',
+      link: '#',
+      icon: './assets/images/image-google-family.png',
+    },
+    {
+      title: 'Google Fi',
+      link: '#',
+      icon: './assets/images/image-google-fi.png',
+    },
+    {
+      title: 'Google Nest',
+      link: '#',
+      icon: './assets/images/image-google-nest.png',
+    },
+    {
+      title: 'Google Pay',
+      link: '#',
+      icon: './assets/images/image-google-pay.png',
+    },
+    {
+      title: 'Google Store',
+      link: '#',
+      icon: './assets/images/image-google-store.png',
+    },
+    {
+      title: 'Google Drive',
+      link: '#',
+      icon: './assets/images/image-google-drive.png',
+    },
+    {
+      title: 'Google Shopping',
+      link: '#',
+      icon: './assets/images/image-google-shopping.png',
+    },
+    {
+      title: 'Google Accessibility',
+      link: '#',
+      icon: './assets/images/image-google-accessibility.png',
+    },
+  ]
+
+  const dataConsumerProducts = [
+    {
+      title: 'Blogger',
+      link: '#',
+      icon: './assets/images/32px/image-blogger.png',
+    },
+    {
+      title: 'Finance',
+      link: '#',
+      icon: './assets/images/32px/image-finance.png',
+    },
+    {
+      title: 'Google Earth',
+      link: '#',
+      icon: './assets/images/32px/image-google-earth.png',
+    },
+    {
+      title: 'Google Maps',
+      link: '#',
+      icon: './assets/images/32px/image-google-map.png',
+    },
+    {
+      title: 'Gmail',
+      link: '#',
+      icon: './assets/images/32px/image-google-mail.png',
+    },
+    {
+      title: 'Picasa',
+      link: '#',
+      icon: './assets/images/32px/image-picasa.png',
+    },
+    {
+      title: 'Toolbar',
+      link: '#',
+      icon: './assets/images/32px/image-toolbar.png',
+    },
+    {
+      title: 'Google Search',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Calendar',
+      link: '#',
+      icon: './assets/images/32px/image-google-calendar.png',
+    },
+    {
+      title: 'Docs Editors',
+      link: '#',
+      icon: './assets/images/32px/image-editor-document.png',
+    },
+    {
+      title: 'Books',
+      link: '#',
+      icon: './assets/images/32px/image-books.png',
+    },
+    {
+      title: 'Google Groups',
+      link: '#',
+      icon: './assets/images/32px/image-google-groups.png',
+    },
+    {
+      title: 'Youtube',
+      link: '#',
+      icon: './assets/images/32px/image-youtube.png',
+    },
+    {
+      title: 'Trends',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Android',
+      link: '#',
+      icon: './assets/images/32px/image-android.png',
+    },
+    {
+      title: 'Sites',
+      link: '#',
+      icon: './assets/images/32px/image-web.png',
+    },
+    {
+      title: 'Google Chrome',
+      link: '#',
+      icon: './assets/images/32px/image-chrome.png',
+    },
+    {
+      title: 'Google Drive',
+      link: '#',
+      icon: './assets/images/32px/image-google-drive.png',
+    },
+    {
+      title: 'Google Voice',
+      link: '#',
+      icon: './assets/images/32px/image-google-voice.png',
+    },
+    {
+      title: 'Google Translate',
+      link: '#',
+      icon: './assets/images/32px/image-google-translate.png',
+    },
+    {
+      title: 'Chromebook',
+      link: '#',
+      icon: './assets/images/32px/image-chrome.png',
+    },
+    {
+      title: 'Google TV',
+      link: '#',
+      icon: './assets/images/32px/image-google-tv.svg',
+    },
+    {
+      title: 'Google Play',
+      link: '#',
+      icon: './assets/images/32px/image-google-play.png',
+    },
+    {
+      title: 'My Maps',
+      link: '#',
+      icon: './assets/images/32px/image-my-maps.png',
+    },
+    {
+      title: 'Chrome Web Store',
+      link: '#',
+      icon: './assets/images/32px/image-chrome-store.png',
+    },
+    {
+      title: 'Travel',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Fiber',
+      link: '#',
+      icon: './assets/images/32px/image-fiber.png',
+    },
+    {
+      title: 'Nexus',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Ads',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Hangouts',
+      link: '#',
+      icon: './assets/images/32px/image-hangouts.png',
+    },
+    {
+      title: 'Nik Collection',
+      link: '#',
+      icon: './assets/images/32px/image-nikcollection.png',
+    },
+    {
+      title: 'Chromecast',
+      link: '#',
+      icon: './assets/images/32px/image-chromecast.png',
+    },
+    {
+      title: 'Snapseed',
+      link: '#',
+      icon: './assets/images/32px/image-snapseed.png',
+    },
+    {
+      title: 'Google Keep',
+      link: '#',
+      icon: './assets/images/32px/image-google-keep.png',
+    },
+    {
+      title: 'Starbucks Wifi',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Fi',
+      link: '#',
+      icon: './assets/images/32px/image-google-fi.png',
+    },
+    {
+      title: 'Waze',
+      link: '#',
+      icon: './assets/images/32px/image-wazer.png',
+    },
+    {
+      title: 'Wear OS by Google',
+      link: '#',
+      icon: './assets/images/32px/image-wear-os.png',
+    },
+    {
+      title: 'Google Fit',
+      link: '#',
+      icon: './assets/images/32px/image-google-fit.png',
+    },
+    {
+      title: 'YouTube Kids Parental Guide',
+      link: '#',
+      icon: './assets/images/32px/image-youtube-kids.png',
+    },
+    {
+      title: 'Google Store',
+      link: '#',
+      icon: './assets/images/32px/image-google-store.png',
+    },
+    {
+      title: 'Chromecast built-in',
+      link: '#',
+      icon: './assets/images/32px/image-chrome.png',
+    },
+    {
+      title: 'Google Photos',
+      link: '#',
+      icon: './assets/images/32px/image-photo.png',
+    },
+    {
+      title: 'Android Auto',
+      link: '#',
+      icon: './assets/images/32px/image-android-auto.png',
+    },
+    {
+      title: 'Android TV',
+      link: '#',
+      icon: './assets/images/32px/image-android-tv.png',
+    },
+    {
+      title: 'Google For Families',
+      link: '#',
+      icon: './assets/images/32px/image-google-family.png',
+    },
+    {
+      title: 'Google Camera',
+      link: '#',
+      icon: './assets/images/32px/image-google-camera.png',
+    },
+    {
+      title: 'Google Wifi',
+      link: '#',
+      icon: './assets/images/32px/image-google-wifi.png',
+    },
+    {
+      title: 'Local Guides',
+      link: '#',
+      icon: './assets/images/32px/image-local-guide.png',
+    },
+    {
+      title: 'YouTube Music',
+      link: '#',
+      icon: './assets/images/32px/image-youtube-music.png',
+    },
+    {
+      title: 'YouTube Studio App Help Center',
+      link: '#',
+      icon: './assets/images/32px/image-youtube.png',
+    },
+    {
+      title: 'Google Cardboard',
+      link: '#',
+      icon: './assets/images/32px/image-cardboard.png',
+    },
+    {
+      title: 'Google Duo',
+      link: '#',
+      icon: './assets/images/32px/image-duo.png',
+    },
+    {
+      title: 'Dataly',
+      link: '#',
+      icon: './assets/images/32px/image-dataly.png',
+    },
+    {
+      title: 'YouTube Go',
+      link: '#',
+      icon: './assets/images/32px/image-youtube-go.png',
+    },
+    {
+      title: 'Google Nest',
+      link: '#',
+      icon: './assets/images/32px/image-google-nest.png',
+    },
+    {
+      title: 'YouTube TV',
+      link: '#',
+      icon: './assets/images/32px/image-youtube-tv.png',
+    },
+    {
+      title: 'Google Clips',
+      link: '#',
+      icon: './assets/images/32px/image-google-clips.png',
+    },
+    {
+      title: 'Pixel Phone',
+      link: '#',
+      icon: './assets/images/32px/image-google-pixel.png',
+    },
+    {
+      title: 'Opinion Rewards',
+      link: '#',
+      icon: './assets/images/32px/image-opinion-reward.png',
+    },
+    {
+      title: 'Daydream',
+      link: '#',
+      icon: './assets/images/32px/image-daydream.png',
+    },
+    {
+      title: 'Google Assistant',
+      link: '#',
+      icon: './assets/images/32px/image-assistant.png',
+    },
+    {
+      title: 'Files by Google',
+      link: '#',
+      icon: './assets/images/32px/image-file-by-google.png',
+    },
+    {
+      title: 'CS First',
+      link: '#',
+      icon: './assets/images/32px/image-cs-first.png',
+    },
+    {
+      title: 'Google Chat',
+      link: '#',
+      icon: './assets/images/32px/image-google-chat.png',
+    },
+    {
+      title: 'Pixelbook',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Messages',
+      link: '#',
+      icon: './assets/images/32px/image-google-messages.png',
+    },
+    {
+      title: 'Reserve with Google',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Phone app',
+      link: '#',
+      icon: './assets/images/32px/image-dialer.png',
+    },
+    {
+      title: 'Gboard',
+      link: '#',
+      icon: './assets/images/32px/image-gboard.png',
+    },
+    {
+      title: 'Contacts',
+      link: '#',
+      icon: './assets/images/32px/image-contacts.png',
+    },
+    {
+      title: 'Google One',
+      link: '#',
+      icon: './assets/images/32px/image-google-one.png',
+    },
+    {
+      title: 'Google Pay',
+      link: '#',
+      icon: './assets/images/32px/image-g-pay.png',
+    },
+    {
+      title: 'Taks',
+      link: '#',
+      icon: './assets/images/32px/image-google-tasks.png',
+    },
+    {
+      title: 'Google News',
+      link: '#',
+      icon: './assets/images/32px/image-google-news.png',
+    },
+    {
+      title: 'Google Accessibility',
+      link: '#',
+      icon: './assets/images/32px/image-accessibility.png',
+    },
+    {
+      title: 'Science Journal',
+      link: '#',
+      icon: './assets/images/32px/image-science-journal.png',
+    },
+    {
+      title: 'Google Shopping',
+      link: '#',
+      icon: './assets/images/32px/image-google-shopping.png',
+    },
+    {
+      title: 'Stadia',
+      link: '#',
+      icon: './assets/images/32px/image-stadia.png',
+    },
+    {
+      title: 'Google Pay',
+      link: '#',
+      icon: './assets/images/32px/image-google-pay.png',
+    },
+    {
+      title: 'Google Food Ordering',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Kids Space',
+      link: '#',
+      icon: './assets/images/32px/image-kid-space.png',
+    },
+    {
+      title: 'User Security',
+      link: '#',
+      icon: './assets/images/32px/image-security-shield.png',
+    },
+  ]
+
+  const dataBusiness = [
+    {
+      title: 'Google Ads Editor',
+      link: '#',
+      icon: './assets/images/32px/image-google-ads-editor.png',
+    },
+    {
+      title: 'Google Workspace Admin',
+      link: '#',
+      icon: './assets/images/32px/image-workspace-admin.png',
+    },
+    {
+      title: 'Books',
+      link: '#',
+      icon: './assets/images/32px/image-books.png',
+    },
+    {
+      title: 'Search Console',
+      link: '#',
+      icon: './assets/images/32px/image-search-console.png',
+    },
+    {
+      title: 'Programmalbe Search Engine',
+      link: '#',
+      icon: './assets/images/32px/image-search-custom.png',
+    },
+    {
+      title: 'Publisher Center',
+      link: '#',
+      icon: './assets/images/32px/image-google-news.png',
+    },
+    {
+      title: 'Ad Grants',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Workspace',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Google Ads',
+      link: '#',
+      icon: './assets/images/32px/image-google-ads.png',
+    },
+    {
+      title: 'Google Cloud',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Studio',
+      link: '#',
+      icon: './assets/images/32px/image-studio.png',
+    },
+    {
+      title: 'Adsense',
+      link: '#',
+      icon: './assets/images/32px/image-ads-sense.png',
+    },
+    {
+      title: 'Authorized Buyer',
+      link: '#',
+      icon: './assets/images/32px/image-author-buyer.png',
+    },
+    {
+      title: 'Map Content Partners',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Merchant Center',
+      link: '#',
+      icon: './assets/images/32px/image-google-merchant-center.png',
+    },
+    {
+      title: 'Google Ad Manager',
+      link: '#',
+      icon: './assets/images/32px/image-google-ad-manager.png',
+    },
+    {
+      title: 'Analytics',
+      link: '#',
+      icon: './assets/images/32px/image-analytics.png',
+    },
+    {
+      title: 'Currents',
+      link: '#',
+      icon: './assets/images/32px/image-currents.png',
+    },
+    {
+      title: 'Transit Partners',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Global Market Finder',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google for Nonprofits',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Search Ads 306',
+      link: '#',
+      icon: './assets/images/32px/image-search-ads-360.png',
+    },
+    {
+      title: 'Google Chrome Enterprise',
+      link: '#',
+      icon: './assets/images/32px/image-chrome.png',
+    },
+    {
+      title: 'Google Admob',
+      link: '#',
+      icon: './assets/images/32px/image-google-admob.png',
+    },
+    {
+      title: 'AdWords Express',
+      link: '#',
+      icon: './assets/images/32px/image-ad-word-express.png',
+    },
+    {
+      title: 'Google Vault',
+      link: '#',
+      icon: './assets/images/32px/image-google-vault.png',
+    },
+    {
+      title: 'Google My Business',
+      link: '#',
+      icon: './assets/images/32px/image-google-my-business.png',
+    },
+    {
+      title: 'Hotel Center',
+      link: '#',
+      icon: './assets/images/32px/image-travel-hotels.png',
+    },
+    {
+      title: 'Display & Video 360',
+      link: '#',
+      icon: './assets/images/32px/image-display-video-360.png',
+    },
+    {
+      title: 'Google Search Appliance',
+      link: '#',
+      icon: './assets/images/32px/image-search-developer.png',
+    },
+    {
+      title: 'Campaign Manager 360',
+      link: '#',
+      icon: './assets/images/32px/image-camera-manager-360.png',
+    },
+    {
+      title: 'Google Domains',
+      link: '#',
+      icon: './assets/images/32px/image-google-domain.png',
+    },
+    {
+      title: 'Google Pay Merchant',
+      link: '#',
+      icon: './assets/images/32px/image-g-pay.png',
+    },
+    {
+      title: 'Google Cloud Platform Console',
+      link: '#',
+      icon: './assets/images/32px/image-cloud-platform.png',
+    },
+    {
+      title: 'Cultural Institute Platform',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Display Specs',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Android Enterprise',
+      link: '#',
+      icon: './assets/images/32px/image-android-half.png',
+    },
+    {
+      title: 'Could Search',
+      link: '#',
+      icon: './assets/images/32px/image-google-cloud-search.png',
+    },
+    {
+      title: 'Google Marketing Platform',
+      link: '#',
+      icon: './assets/images/32px/image-marketing-platform.png',
+    },
+    {
+      title: 'Cardboard Manufacturer',
+      link: '#',
+      icon: './assets/images/32px/image-cardboard.png',
+    },
+    {
+      title: 'Card Issuer',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Google Meet',
+      link: '#',
+      icon: './assets/images/32px/image-google-meet.png',
+    },
+    {
+      title: 'Jamboard',
+      link: '#',
+      icon: './assets/images/32px/image-jamboard.png',
+    },
+    {
+      title: 'Google Pay for Online Business',
+      link: '#',
+      icon: './assets/images/32px/image-g-pay.png',
+    },
+    {
+      title: 'Work Insights',
+      link: '#',
+      icon: './assets/images/32px/image-work-insight.png',
+    },
+    {
+      title: 'Comparison Shopping Servies Center',
+      link: '#',
+      icon: './assets/images/32px/image-comparison-shopping.png',
+    },
+    {
+      title: 'POps VMO Scaled Services Knowledge',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Elastifile',
+      link: '#',
+      icon: './assets/images/32px/image-elastifile.png',
+    },
+    {
+      title: 'CEWA',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'POps VMO Candidate Supprot Knowledge Hub',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+  ]
+
+  const dataDeveloper = [
+    {
+      title: 'Play Console',
+      link: '#',
+      icon: './assets/images/32px/image-play-console.png',
+    },
+    {
+      title: 'GDG',
+      link: '#',
+      icon: './assets/images/32px/image-cs-first.png',
+    },
+    {
+      title: 'Google Web Designer',
+      link: '#',
+      icon: './assets/images/32px/image-google-web-design.png',
+    },
+    {
+      title: 'Cast Developer',
+      link: '#',
+      icon: './assets/images/32px/image-chrome.png',
+    },
+    {
+      title: 'reCAPTCHA',
+      link: '#',
+      icon: './assets/images/32px/image-re-captcha.png',
+    },
+    {
+      title: 'Payments Center',
+      link: '#',
+      icon: './assets/images/32px/image-google.png',
+    },
+    {
+      title: 'Payment Processors',
+      link: '#',
+      icon: './assets/images/32px/image-google-gray.png',
+    },
+    {
+      title: 'Justice League',
+      link: '#',
+      icon: './assets/images/32px/image-justice-league.png',
+    },
+  ]

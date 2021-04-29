@@ -1,0 +1,35 @@
+include ../common/data-supports.pug
+
+section.section-tab-supports
+  .section-wrapper 
+    #accordion.supports-wrapper.mb-5
+      each item, index in dataSupports
+        .support-item
+          .item-header.d-flex.align-items-center.justify-content-between(id=`heading${index}` class=`${index === 0 ? '' : 'collapsed'}` data-toggle="collapse" data-target=`#collapse${index}` aria-expanded="true" aria-controls=`collapse${index}`)
+            span.header-title= item.title
+            img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+          .item-body(id=`collapse${index}` aria-labelledby=`heading${index}` data-parent="#accordion" class=`${index === 0 ? 'show' : ''}`).collapse
+            ul.lists-item-supports 
+              each sub in item.child
+                li 
+                  a(href=`${sub.link}`)= sub.title
+
+    .support-more-help 
+      h2.text-center Need more help?
+      p.text-center.mb-4  Try these next steps:
+      .row 
+        .col-md-6.mb-3
+          .support-card.d-flex.align-items-start 
+            .card-icon 
+              img(src="./assets/icons/icon-chat-white.svg", alt="")
+            .card-content 
+              h5 Ask the Help Community 
+              p Get answers from community experts
+
+        .col-md-6.mb-3
+          .support-card.d-flex.align-items-start 
+            .card-icon 
+              img(src="./assets/icons/icon-headphone-white.svg", alt="")
+            .card-content 
+              h5 Contact us
+              p Tell us more and we’ll help you get there
