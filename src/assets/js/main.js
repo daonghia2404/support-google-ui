@@ -2,6 +2,7 @@ window.onload = () => {
   setupTooltip.init()
   setupExpandProduct.init()
   setupExpandMenu.init()
+  dropdownBootstrap.init()
 }
 
 const setupTooltip = {
@@ -12,6 +13,18 @@ const setupTooltip = {
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+  }
+}
+
+
+const dropdownBootstrap = {
+  init: function() {
+    this.configHeaderAccount()
+  },
+  configHeaderAccount: function() {
+    $(document).on('click', '.dropdown-header-account', function (e) {
+      e.stopPropagation();
+    });
   }
 }
 

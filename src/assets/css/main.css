@@ -403,6 +403,20 @@ a {
       background: rgba(60, 64, 67, 0.08); }
     .button-component.white-outline .button-title {
       color: #3c4043; }
+  .button-component.blue {
+    border-color: #1a73e8;
+    background: #1a73e8; }
+    .button-component.blue:hover {
+      background: #3181ea; }
+    .button-component.blue .button-title {
+      color: #fff; }
+  .button-component.white {
+    border-color: #bdc1c6;
+    background: #fff; }
+    .button-component.white:hover {
+      background: rgba(60, 64, 67, 0.08); }
+    .button-component.white .button-title {
+      color: #3c4043; }
   .button-component.text-blue .button-title {
     color: #1a73e8; }
 
@@ -517,8 +531,121 @@ header.header {
       text-align: center;
       display: block;
       color: #3c4043; }
-  .dropdown-header-menu .button-groups .button-component {
-    padding: 10px 15px; }
+
+.button-groups .button-component {
+  padding: 10px 15px; }
+
+.dropdown-header-account {
+  width: 350px;
+  border-radius: 10px;
+  max-height: 600px;
+  padding: 15px 0;
+  overflow: auto;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15); }
+  @media (max-width: 575px) {
+    .dropdown-header-account {
+      width: 300px; } }
+  .dropdown-header-account p {
+    font-family: 'Roboto', sans-serif; }
+  .dropdown-header-account .header-account-wrapper .account-avatar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px; }
+    .dropdown-header-account .header-account-wrapper .account-avatar .avatar {
+      padding: 0;
+      width: 80px;
+      height: 80px; }
+    .dropdown-header-account .header-account-wrapper .account-avatar .avatar-upload {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      display: flex; }
+      .dropdown-header-account .header-account-wrapper .account-avatar .avatar-upload input {
+        opacity: 0;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+      .dropdown-header-account .header-account-wrapper .account-avatar .avatar-upload img {
+        width: 15px;
+        height: auto;
+        margin: auto;
+        border-radius: 0; }
+  .dropdown-header-account .account-name {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #202124;
+    margin-bottom: 2px; }
+  .dropdown-header-account .account-email {
+    text-align: center;
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 20px; }
+  .dropdown-header-account .account-lists .account-item {
+    padding: 12px 30px;
+    cursor: pointer;
+    background: rgba(60, 64, 67, 0.08); }
+    @media (max-width: 575px) {
+      .dropdown-header-account .account-lists .account-item {
+        padding: 12px 15px; } }
+    .dropdown-header-account .account-lists .account-item.collapsed {
+      background: #fff; }
+      .dropdown-header-account .account-lists .account-item.collapsed .info .account-email img {
+        transform: rotate(0deg); }
+    .dropdown-header-account .account-lists .account-item .account-icon,
+    .dropdown-header-account .account-lists .account-item .avatar {
+      margin-right: 10px;
+      flex: 0 0 32px;
+      max-width: 32px;
+      height: 32px;
+      padding: 0; }
+    .dropdown-header-account .account-lists .account-item .account-icon {
+      display: flex; }
+      .dropdown-header-account .account-lists .account-item .account-icon img {
+        margin: auto;
+        width: 18px; }
+    .dropdown-header-account .account-lists .account-item .info {
+      position: relative;
+      flex: 1; }
+      .dropdown-header-account .account-lists .account-item .info .account-name {
+        text-align: left;
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-right: 60px; }
+      .dropdown-header-account .account-lists .account-item .info .account-email {
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 0; }
+        .dropdown-header-account .account-lists .account-item .info .account-email img {
+          width: 10px;
+          margin-left: 5px;
+          transform: rotate(180deg); }
+      .dropdown-header-account .account-lists .account-item .info .account-signed-out {
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 12px;
+        color: #5f6368;
+        font-style: italic; }
+  .dropdown-header-account .account-term a, .dropdown-header-account .account-term span {
+    display: block;
+    font-size: 12px;
+    color: #5f6368;
+    margin: 0 5px;
+    font-weight: 600; }
 
 footer.footer {
   margin-top: 24px;

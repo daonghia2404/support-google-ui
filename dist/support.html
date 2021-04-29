@@ -82,7 +82,65 @@
               </div>
             </div>
           </div>
-          <div class="avatar" data-toggle="tooltip" data-placement="bottom" data-html="true" title="&lt;p class=&quot;mb-0 text-left&quot;&gt;Goolge Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;My Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;myaccount@gmail.com&lt;/p&gt;"><img src="./assets/images/image-avatar.png" alt=""></div>
+          <div class="dropdown" data-toggle="tooltip" data-placement="bottom" data-html="true" title="&lt;p class=&quot;mb-0 text-left&quot;&gt;Goolge Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;My Account&lt;/p&gt;&lt;p class=&quot;mb-0 text-left gray-light-color&quot;&gt;myaccount@gmail.com&lt;/p&gt;">
+            <div class="avatar" type="button" id="dropdownHeaderAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="./assets/images/image-avatar.png" alt=""></div>
+            <div class="dropdown-menu dropdown-header-account dropdown-menu-right" aria-labelledby="dropdownHeaderAccount">
+              <div class="header-account-wrapper"> 
+                <div class="account-avatar">
+                  <div class="avatar"> <img src="./assets/images/image-avatar.png" alt="">
+                    <div class="avatar-upload"> 
+                      <input type="file"><img src="./assets/icons/icon-camera-gray.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <h5 class="account-name">My Name </h5>
+                <p class="account-email">mymail@gmail.com</p>
+                <div class="button-groups d-flex justify-content-center mb-3">
+                      <button class="button-component white-outline medium radius d-flex align-items-center justify-content-center"><span class="button-title">Manage your Google Account</span>
+                      </button>
+                </div>
+                <div class="line"></div>
+                <div class="account-lists" id="accordion">
+                  <div class="account-item d-flex align-items-start collapsed">
+                    <div class="avatar"> <img src="./assets/images/image-avatar.png" alt=""></div>
+                    <div class="info"> 
+                      <h5 class="account-name">My Name </h5>
+                      <p class="account-email d-flex align-items-center">mymail@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="account-item d-flex align-items-start collapsed" id="headingAccount1" data-toggle="collapse" data-target="#collapseAccount1" aria-expanded="true" aria-controls="collapseAccount1">
+                    <div class="avatar"> <img src="./assets/images/image-avatar.png" alt=""></div>
+                    <div class="info"> 
+                      <h5 class="account-name">My Name </h5>
+                      <p class="account-email d-flex align-items-center">mymail@gmail.com<img src="./assets/icons/icon-angle-down-gray.svg" alt=""></p>
+                      <p class="account-signed-out">Signed Out</p>
+                      <div class="collapse" id="collapseAccount1" aria-labelledby="headingAccount1" data-parent="#accordion">
+                        <div class="button-groups d-flex flex-wrap mt-2">
+                              <button class="button-component blue mr-2 medium d-flex align-items-center justify-content-center"><span class="button-title">Sign In</span>
+                              </button>
+                              <button class="button-component blue mr-2 white d-flex align-items-center justify-content-center"><span class="button-title">Remove</span>
+                              </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-item d-flex align-items-center collapsed">
+                    <div class="account-icon"><img src="./assets/icons/icon-user-plus-gray.svg" alt=""></div>
+                    <div class="info"> 
+                      <h5 class="account-name">Add another account</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="line"> </div>
+                <div class="button-groups d-flex justify-content-center">
+                      <button class="button-component white-outline medium d-flex align-items-center justify-content-center"><span class="button-title">Sign out of all accounts</span>
+                      </button>
+                </div>
+                <div class="line"> </div>
+                <div class="account-term d-flex align-items-center justify-content-center"> <a href="#">Privacy Policy</a><span>•</span><a href="#">Terms of Service</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>

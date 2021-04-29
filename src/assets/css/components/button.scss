@@ -61,6 +61,29 @@
     }
   }
 
+  &.blue {
+    border-color: $blue;
+    background: $blue;
+    &:hover {
+      background: lighten($blue, 5%);
+    }
+    .button-title {
+      color: $white;
+    }
+  }
+
+  &.white {
+    border-color: $gray-light;
+    background: $white;
+    &:hover {
+      background: $gray-hover;
+    }
+    .button-title {
+      color: $gray-dark;
+    }
+
+  }
+
   &.text-blue {
     .button-title {
       color: $blue;

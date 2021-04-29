@@ -43,6 +43,73 @@ header.header
           .button-groups.d-flex.justify-content-center
             +Button({ className: 'white-outline text-blue medium', title: 'More from Google' })
 
-      .avatar(data-toggle="tooltip" data-placement=`bottom` data-html="true" title=`<p class="mb-0 text-left">Goolge Account</p><p class="mb-0 text-left gray-light-color">My Account</p><p class="mb-0 text-left gray-light-color">myaccount@gmail.com</p>`)
-        img(src="./assets/images/image-avatar.png", alt="")
+      .dropdown(data-toggle="tooltip" data-placement=`bottom` data-html="true" title=`<p class="mb-0 text-left">Goolge Account</p><p class="mb-0 text-left gray-light-color">My Account</p><p class="mb-0 text-left gray-light-color">myaccount@gmail.com</p>`)
+        .avatar(type="button" id=`dropdownHeaderAccount` data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          img(src="./assets/images/image-avatar.png", alt="")
+        .dropdown-menu.dropdown-header-account.dropdown-menu-right(aria-labelledby="dropdownHeaderAccount")
+          .header-account-wrapper 
+            .account-avatar
+              .avatar 
+                img(src="./assets/images/image-avatar.png", alt="")
+                .avatar-upload 
+                  input(type="file")
+                  img(src="./assets/icons/icon-camera-gray.svg", alt="")
+            
+            h5.account-name My Name 
+            p.account-email mymail@gmail.com
+
+            .button-groups.d-flex.justify-content-center.mb-3
+              +Button({ className: 'white-outline medium radius', title: 'Manage your Google Account' })
+
+            .line
+
+            .account-lists#accordion
+              .account-item.d-flex.align-items-start.collapsed
+                .avatar 
+                  img(src="./assets/images/image-avatar.png", alt="")
+                .info 
+                  h5.account-name My Name 
+                  p.account-email.d-flex.align-items-center mymail@gmail.com
+
+              .account-item.d-flex.align-items-start(id=`headingAccount1` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccount1` aria-expanded="true" aria-controls=`collapseAccount1`)
+                .avatar 
+                  img(src="./assets/images/image-avatar.png", alt="")
+                .info 
+                  h5.account-name My Name 
+                  p.account-email.d-flex.align-items-center
+                    |mymail@gmail.com
+                    img(src="./assets/icons/icon-angle-down-gray.svg", alt="")
+
+                  p.account-signed-out Signed Out
+
+                  .collapse(id=`collapseAccount1` aria-labelledby=`headingAccount1` data-parent="#accordion")
+                    .button-groups.d-flex.flex-wrap.mt-2
+                      +Button({ title: 'Sign In', className: 'blue mr-2 medium' })
+                      +Button({ title: 'Remove', className: 'blue mr-2 white' })
+
+              .account-item.d-flex.align-items-center.collapsed
+                .account-icon
+                  img(src="./assets/icons/icon-user-plus-gray.svg", alt="")
+                .info 
+                  h5.account-name Add another account
+
+            .line 
+
+            .button-groups.d-flex.justify-content-center
+              +Button({ className: 'white-outline medium', title: 'Sign out of all accounts' })
+
+            .line 
+
+            .account-term.d-flex.align-items-center.justify-content-center 
+              a(href="#") Privacy Policy
+              span •
+              a(href="#") Terms of Service
+              
+
+
+
+
+                  
+
+
 
