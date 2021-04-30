@@ -1,0 +1,159 @@
+include ../common/data-help.pug
+section.section-answer
+  .section-wrapper 
+    .row 
+      .col-lg-8
+        .wrapper-item.answer-detail.style-editable
+          .wrapper-item-header
+            h1 Use tabs in Chrome
+            p You can open as many tabs as you want in Chrome. You can also view all your tabs and switch among them.
+            a(href="#") Learn how to manage suggested articles.
+            .tab-wrapper
+              .tabs-group.d-flex
+                .tab-item.active Computer
+                .tab-item Android
+                .tab-item iPhone & iPad 
+
+              .tabs-main-group
+                each item in [1,2,3]
+                  .tab-item(class=`${item === 1  ? 'active' : ''}`)
+                    h2= `Open a new tab ${item}`
+                    p At the top of your Google Chrome window, next to the last tab on the right, click New tab #[img(src="./assets/images/image-plus.png")]. Or, use a #[a(href="#") keyboard shortcut:]
+                    ul.list-style-dot
+                      li #[strong Windows & Linux: Ctrl + t]
+                      li #[strong Mac: ⌘ + t]
+
+                    .accordion-lists#accordion-1
+                      .accordion-item
+                        .item-header.d-flex.justify-content-between(id=`headingAccordion1` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccordion1` aria-expanded="true" aria-controls=`collapseAccordion1`)
+                          span.header-title Open a tab in a new window
+                          img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+                        .item-body(id=`collapseAccordion1` aria-labelledby=`headingAccordion1` data-parent="#accordion-1").collapse
+                          p Click and drag the tab outside the Google Chrome window.
+                          p To open a new window, use a keyboard shortcut:
+                          ul.list-style-dot
+                            li #[strong Windows & Linux: Ctrl + n]
+                            li #[strong Mac: ⌘ + n]
+                            
+                      .accordion-item
+                        .item-header.d-flex.justify-content-between(id=`headingAccordion2` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccordion2` aria-expanded="true" aria-controls=`collapseAccordion2`)
+                          span.header-title Open a file in a new tab
+                          img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+                        .item-body(id=`collapseAccordion2` aria-labelledby=`headingAccordion2` data-parent="#accordion-1").collapse
+                          p From your computer's desktop or folder, drag the file into a Google Chrome tab. If the action is successful, your cursor will display Add Add #[img(src="./assets/images/image-plus.png")].
+                          p Browse and select the file from your computer. Open a new tab, then use a keyboard shortcut:
+
+                          ul.list-style-dot
+                            li #[strong Windows & Linux: Ctrl + o]
+                            li #[strong Mac: ⌘ + o]
+                            
+                      .accordion-item
+                        .item-header.d-flex.justify-content-between(id=`headingAccordion3` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccordion3` aria-expanded="true" aria-controls=`collapseAccordion3`)
+                          span.header-title Open a tab in a new window
+                          img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+                        .item-body(id=`collapseAccordion3` aria-labelledby=`headingAccordion3` data-parent="#accordion-1").collapse
+                          ul.list-style-dot
+                            li #[strong Windows & Linux: Ctrl + click a link]
+                            li #[strong Mac: ⌘ + click a link]
+
+                    h2 Customize your new tab page
+                    p When you open a new tab, under the search box, you'll find websites you visit often or shortcuts to websites you've chosen.
+                    ul.list-style-dot
+                      li To hide shortcuts or your most visited websites, or to switch between them, open Chrome and go to the shortcuts tab under Customize Edit #[img(src="./assets/images/image-edit.png")]. 
+                      li To visit a site, click the icon.
+                      li To remove or edit a site, point to the icon. At the top right of the icon, click More #[img(src="./assets/images/image-dots.png")].
+
+                    h3 Add a custom background image
+                    p You can upload a photo or use a background from Chrome.
+                    ul.list-style-number 
+                      li In the bottom right of the new tab page, click Customize #[img(src="./assets/images/image-edit.png")]. 
+                      li In the “Background” tab, select a Chrome background to customize your browser, or upload your own photo. 
+
+                    h2 Group your tabs
+                    p You can organize your tabs with groups.
+                    ul.list-style-number
+                      li On your computer, open Chrome.
+                      li Click New tab #[img(src="./assets/images/image-plus.png")].
+                      li
+                        |Right-click a tab and then select #[strong Add to new group]
+                        ul.list-style-dot 
+                          li
+                            |#[strong To edit your tab group], right-click the colored circle or name to the left. You can:
+                            ul.list-style-dot
+                              li Name your group.
+                              li Add additional tabs to the group.
+                              li Remove the group.
+                          li #[strong To add a tab to an existing group], drag the tab into the group.
+                          li #[strong To remove a tab from a group], right-click the tab, then select Remove from group.
+
+                    h2 Close a tab
+                    p At the top right of the tab, click Close Close. Or, use a keyboard shortcut:
+                    ul.list-style-dot 
+                      li #[strong Windows & Linux: Ctrl + w]
+                      li #[strong Mac: ⌘ + w]
+
+                    .accordion-lists#accordion-2
+                      .accordion-item
+                        .item-header.d-flex.justify-content-between(id=`headingAccordion1` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccordion1` aria-expanded="true" aria-controls=`collapseAccordion1`)
+                          span.header-title Close a window
+                          img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+                        .item-body(id=`collapseAccordion1` aria-labelledby=`headingAccordion1` data-parent="#accordion-2").collapse
+                          ul.list-style-dot 
+                            li Close all tabs in the window.
+                            li 
+                              |At the top corner of the window, click Close.
+                              ul.list-style-dot 
+                                li #[strong Window & Linux: ] At the top right.
+                                li #[strong Mac: ] At the top left.
+                            li
+                              |You can also use the keyboard shortcuts to close a window:
+                              ul.list-style-dot 
+                                li #[strong Windows & Linux: Alt + F4]
+                                li #[strong Mac: ⌘ + Shift + w]
+                            
+                      .accordion-item
+                        .item-header.d-flex.justify-content-between(id=`headingAccordion2` class=`collapsed` data-toggle="collapse" data-target=`#collapseAccordion2` aria-expanded="true" aria-controls=`collapseAccordion2`)
+                          span.header-title Close Google Chrome
+                          img(src="./assets/icons/icon-angle-down-blue.svg", alt="").header-icon
+                        .item-body(id=`collapseAccordion2` aria-labelledby=`headingAccordion2` data-parent="#accordion-2").collapse
+                          p You can close Google Chrome entirely.
+                          ul.list-style-number 
+                            li 
+                              |Open the Chrome menu.
+                              ul.list-style-dot 
+                                li #[strong Windows & Linux:] On the top menu bar, click More #[img(src="./assets/images/image-dots.png")].
+                                li #[strong Mac:] On the top menu bar, click Chrome.
+                            li 
+                              |Cloise Google Chrome.
+                              ul.list-style-dot 
+                                li #[strong Windows & Linux:] Click Exit.
+                                li #[strong Mac:] Click Quit Google Chrome.
+                          p You can also use the keyboard shortcut to close Google Chrome:
+                          ul.list-style.dot 
+                            li #[strong Windows & Linux: Ctrl + Shift + q]
+                            li #[strong Mac: ⌘ + q]
+
+                    h2 Related articles
+                    ul.list-style-dot 
+                      li #[a(href="#") Set your homepage and startup page]
+                      li #[a(href="#") Browse in private with Incognito mode]
+
+                    a(href="#").feedback.d-flex.align-items-center 
+                      img(src="./assets/icons/icon-chat-gray.svg", alt="")
+                      |Give feedback about this article
+
+          .wrapper-item-footer
+            .was-helpful.d-flex.align-items-center 
+              p.title-link.open-sans-font Was this helpful 
+              .button-groups.d-flex.align-items-center
+                +Button({ title: 'Yes', className: 'text-blue white medium' })
+                +Button({ title: 'No', className: 'text-blue white medium' })
+
+      .col-lg-4
+        .wrapper-item.answer-list-help
+          a(href="#").title-link Help 
+          .answer-help-list 
+            each item, index in dataHelpList
+              a(href="#" class=`${index === 0 ? 'active' : ''}`).list-link.d-flex.align-items-center
+                img(src="./assets/icons/icon-document-blue.svg", alt="")
+                = item

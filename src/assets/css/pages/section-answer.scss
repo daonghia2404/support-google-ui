@@ -1,0 +1,104 @@
+.section-answer {
+  .section-wrapper {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .wrapper-item {
+    margin-top: 40px;
+    &.answer-list-help {
+      padding: 0 30px;
+      @media (max-width: 575px) {
+        padding: 15px;
+      }
+    }
+    &.answer-detail {
+      border-radius: 8px;
+      border: 1px solid $border;
+      overflow: hidden;
+      .wrapper-item-header {
+        padding: 60px 60px 30px 60px;
+        @media (max-width: 575px) {
+          padding: 30px 30px 15px 30px;
+        }
+      }
+      .wrapper-item-footer {
+        border-top: 1px solid $border;
+        padding: 30px 60px;
+        @media (max-width: 575px) {
+          padding: 15px 30px;
+        }
+      }
+
+      .tab-wrapper {
+        .tabs-group {
+          margin: 30px 0;
+        }
+      }
+    }
+    .title-link {
+      font-size: 16px;
+      color: $gray-dark;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .answer-help-list {
+      .list-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: $gray-dark;
+        font-weight: 400;
+        padding: 10px 0;
+        &.active {
+          font-weight: 600;
+        }
+        img {
+          flex: 0 0 20px;
+          max-width: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .was-helpful {
+      @media (max-width: 575px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .title-link {
+        margin-bottom: 0;
+        margin-right: 15px;
+        @media (max-width: 575px) {
+          margin-bottom: 15px;
+          margin-right: 0;
+        }
+      }
+      .button-groups {
+        @media (max-width: 575px) {
+          justify-content: center;
+        }
+      }
+      .button-component {
+        margin-right: 15px;
+        min-width: 85px;
+        @media (max-width: 575px) {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    .feedback {
+      margin: 20px 0;
+      color: $gray-dark;
+      img {
+        width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
