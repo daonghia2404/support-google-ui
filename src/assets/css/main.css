@@ -451,6 +451,7 @@ a {
         font-family: 'Roboto', sans-serif; }
       .style-editable .accordion-lists .accordion-item .item-header .header-icon {
         width: 11px;
+        height: 11px;
         transform: rotate(180deg); }
     .style-editable .accordion-lists .accordion-item .item-body {
       margin-bottom: 10px;
@@ -1035,6 +1036,7 @@ footer.footer {
           color: #202124; }
         .section-tab-supports .section-wrapper .supports-wrapper .support-item .item-header .header-icon {
           width: 11px;
+          height: 11px;
           transform: rotate(180deg); }
       .section-tab-supports .section-wrapper .supports-wrapper .support-item .item-body {
         padding: 8px 0;
