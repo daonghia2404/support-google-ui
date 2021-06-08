@@ -3,6 +3,7 @@ window.onload = () => {
   setupExpandProduct.init()
   setupExpandMenu.init()
   dropdownBootstrap.init()
+  tabEvent.init()
   owlCarousel.init()
 }
 
@@ -98,3 +99,26 @@ const owlCarousel = {
     $owl.trigger("refresh.owl.carousel");
   },
 };
+
+const tabEvent = {
+	init: function () {
+		this.setupTabEvent()
+	},
+	setupTabEvent: function () {
+		const main = document.querySelectorAll('.tab-wrapper')
+		if (main.length !== 0) {
+			main.forEach((mainTarget) => {
+				const tabClick = mainTarget.querySelectorAll('.tabs-group .tab-item')
+				const tabMain = mainTarget.querySelectorAll('.tabs-main-group .tab-item')
+
+				tabClick.forEach((item, index) => item.addEventListener('click', () => {
+					tabClick.forEach(i => i.classList.remove('active'))
+					tabMain.forEach(i => i.classList.remove('active'))
+
+					tabClick[index].classList.add('active')
+					tabMain[index].classList.add('active')
+				}))
+			})
+		}
+	}
+}
