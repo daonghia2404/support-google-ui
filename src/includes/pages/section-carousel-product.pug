@@ -1,0 +1,64 @@
+section.section-carousel-product.section-product 
+  .section-wrapper 
+    .section-header.d-flex.align-items-center.justify-content-between
+      .header-item
+        h5.section-sub-title.d-flex.align-items-center 
+          img(src="./assets/icons/icon-christmas-stars.svg", alt="")
+          |For You
+        h2.section-title Tabletop Games & Expansions
+
+      .header-item 
+        .dropdown
+          +Button({ icon: './assets/icons/icon-vertical-dots-gray.svg', className: 'only-icon section-btn-dropdown', idDropdown: 'dropdownSectionProduct' })
+          .dropdown-menu.dropdown-section-product.dropdown-menu-right(aria-labelledby="dropdownSectionProduct")
+            .dropdown-wrapper
+              p.dropdown-title Hide these recommendations?
+              p Choose why to improve future picks for you
+
+              ul.dropdown-lists 
+                li.list-item.d-flex.align-items-center 
+                  img(src="./assets/icons/icon-chat-gray.svg", alt="")
+                  p Already bought
+                li.list-item.d-flex.align-items-center 
+                  img(src="./assets/icons/icon-chat-gray.svg", alt="")
+                  p Not looking for this category
+                li.list-item.d-flex.align-items-center 
+                  img(src="./assets/icons/icon-chat-gray.svg", alt="")
+                  p Hide for now
+
+              .line 
+
+              .dropdown-recommend.d-flex.align-items-start 
+                .recommend-icon
+                  img(src="./assets/icons/icon-info-gray.svg", alt="")
+                .recommend-text 
+                  p Recommendations may be based on your recent searches, ad clicks, page views and other Google activity
+                  p #[a(href="#") Learn more] about managing how your experience is personalized.
+
+    .section-body 
+      .owl-carousel.custom-style-carousel#product-carousel 
+        each item in [1,2,3,4,5,6,7,8,9,10]
+          .item 
+            include ../components/product.pug
+
+      .section-view-more.d-flex.align-items-center.justify-content-center 
+        span View more
+        img(src="./assets/icons/icon-angle-down-blue.svg", alt="")
+
+
+section.section-carousel-product.section-product 
+  .section-wrapper 
+    .section-header.d-flex.align-items-center.justify-content-between
+      .header-item
+        h2.section-title Electronics
+
+      .header-item 
+
+    .section-body 
+      .owl-carousel.custom-style-carousel#product-carousel 
+        each item in [1,2,3,4,5,6,7,8,9,10]
+          .item 
+            include ../components/product.pug
+
+
+  

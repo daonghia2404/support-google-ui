@@ -1,13 +1,48 @@
 header.header {
-  padding: 8px 16px;
+  padding: 18px 16px;
   margin-bottom: 24px;
+  border-bottom: 1px solid $border;
   @media (max-width: 768px) {
     padding: 8px 10px;
   }
   .header-wrapper {
     position: relative;
     height: 48px;
+
+    .header-search {
+      width: 100%;
+      border: 1px solid $border;
+      border-radius: 30px;
+      max-width: 640px;
+      margin: 0 15px 0 150px;
+      overflow: hidden;
+
+      .search-icon {
+        flex: 0 0 46px;
+        max-width: 46px;
+        height: 46px;
+        display: flex;
+        cursor: pointer;
+        img {
+          width: 18px;
+          height: 18px;
+          margin: auto;
+        }
+      }
+      .search-input {
+        flex: 1;
+        height: 46px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 0 10px 0 0;
+      }
+    }
+
     .header-item {
+      &.search {
+        flex: 1;
+      }
       .header-logo {
         color: $gray;
         font-size: 20px;

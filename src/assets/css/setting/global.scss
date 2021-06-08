@@ -54,4 +54,133 @@ a {
 	background: $border;
 	height: 1px;
 	margin: 15px 0;
+	width: 100%;
+}
+
+section.section-product {
+	&:not(:last-of-type) {
+		.section-wrapper {
+			border-bottom: 1px solid $border;
+		}
+	}
+	.section-wrapper {
+		padding: 60px 15px;
+		max-width: 1280px;
+		margin: 0 auto;
+		.section-header {
+			margin-bottom: 15px;
+			.header-item {
+				.section-sub-title {
+					font-size: 14px;
+					color: $blue;
+					text-transform: uppercase;
+					font-weight: 600;
+					img {
+						width: 24px;
+						height: 24px;
+						margin-right: 5px;
+					}
+				}
+				.section-title {
+					font-size: 30px;
+					color: $text-black;
+				}
+				.section-hero {
+					font-size: 44px;
+					text-align: center;
+					color: $text-black;
+				}
+			}
+		}
+	}
+
+	.section-view-more {
+		margin: 40px 0 0;
+		border-radius: 30px;
+		padding: 12px;
+		cursor: pointer;
+		font-size: 14px;
+		color: $blue;
+		&:hover {
+			background: $blue-light;
+		}
+		img {
+			width: 15px;
+			margin-left: 8px;
+		}
+	}
+
+	.dropdown-section-product {
+		min-width: 320px;
+		p {
+			padding: 0 16px;
+			font-size: 14px;
+			line-height: 1.5;
+			margin-bottom: 0;
+			&.dropdown-title {
+				font-weight: 600;
+			}
+		}
+		.dropdown-lists {
+			margin: 10px 0 0 0;
+			.list-item {
+				padding: 12px 16px;
+				cursor: pointer;
+				&:hover {
+					background: $gray-light-hover;
+				}
+				img {
+					flex: 0 0 24px;
+					max-width: 24px;
+					transform: translateY(3px);
+				}
+			}
+		}
+		.dropdown-recommend {
+			padding: 0 16px;
+			.recommend-icon {
+				flex: 0 0 24px;
+				max-width: 24px;
+			}
+			.recommend-text {
+				p {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+}
+
+.owl-carousel.custom-style-carousel {
+	position: relative;
+
+	.owl-next,
+	.owl-prev {
+		width: 48px;
+		height: 48px;
+		display: flex;
+		background: $white !important;
+		border: 1px solid $border !important;
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		top: 35%;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		img {
+			width: 18px;
+			height: 18px;
+			margin: auto;
+		}
+		&.disabled {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+	.owl-prev {
+		left: -24px;
+	}
+	.owl-next {
+		right: -24px;
+	}
 }

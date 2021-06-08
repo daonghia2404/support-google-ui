@@ -3,6 +3,7 @@ window.onload = () => {
   setupExpandProduct.init()
   setupExpandMenu.init()
   dropdownBootstrap.init()
+  owlCarousel.init()
 }
 
 const setupTooltip = {
@@ -69,3 +70,31 @@ const setupExpandMenu = {
     }
   }
 }
+
+const owlCarousel = {
+  init: function () {
+    this.setupProductCarousel();
+  },
+  setupProductCarousel: function () {
+    var $owl = $("#product-carousel ").owlCarousel({
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 5,
+        },
+      },
+      loop: false,
+      mouseDrag: false,
+      nav: true,
+      dots: false,
+      margin: 15,
+      navText: [
+        "<img src='./assets/icons/icon-angle-left-blue.svg'>",
+        "<img src='./assets/icons/icon-angle-right-blue.svg'>",
+      ],
+    });
+    $owl.trigger("refresh.owl.carousel");
+  },
+};

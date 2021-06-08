@@ -1,0 +1,14 @@
+.section-ziczac-product {
+  .ziczac-product-main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .ziczac-item {
+      flex: 0 0 calc(100% / 5 - 15px);
+      max-width: calc(100% / 5 - 15px);
+      &:nth-of-type(even) {
+        padding-top: 100px;
+      }
+    }
+  }
+}
