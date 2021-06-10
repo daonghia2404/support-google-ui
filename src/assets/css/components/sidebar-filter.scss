@@ -1,0 +1,45 @@
+.sidebar-filter {
+  padding: 30px;
+  .filter-btn {
+    font-size: 14px;
+    color: $blue;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+    color: $gray-dark;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-title {
+    font-size: 16px;
+    color: $text-black;
+    font-weight: 500;
+  }
+
+  .filter-group {
+    margin-bottom: 30px;
+    .filter-lists {
+      .list-item {
+        .item-label {
+          flex: 1;
+          @include ellipsis(1);
+          color: $gray;
+          margin: 0;
+        }
+        .item-action {
+          input {
+            width: 18px;
+            height: 18px;
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+}

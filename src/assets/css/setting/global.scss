@@ -68,9 +68,13 @@ section.section-product {
   }
 
   .section-wrapper {
-    padding: 60px 15px;
+    padding: 60px 30px;
     max-width: 1280px;
     margin: 0 auto;
+
+    @media (max-width: 991px) {
+      padding: 40px 15px;
+    }
 
     .section-header {
       margin-bottom: 15px;
@@ -82,6 +86,10 @@ section.section-product {
           text-transform: uppercase;
           font-weight: 600;
 
+          @media (max-width: 768px) {
+            font-size: 12px;
+          }
+
           img {
             width: 24px;
             height: 24px;
@@ -92,12 +100,18 @@ section.section-product {
         .section-title {
           font-size: 30px;
           color: $text-black;
+          @media (max-width: 768px) {
+            font-size: 20px;
+          }
         }
 
         .section-hero {
           font-size: 44px;
           text-align: center;
           color: $text-black;
+          @media (max-width: 768px) {
+            font-size: 28px;
+          }
         }
       }
     }
@@ -187,6 +201,10 @@ section.section-product {
     top: 35%;
     transform: translateY(-50%);
     border-radius: 50%;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
 
     img {
       width: 18px;

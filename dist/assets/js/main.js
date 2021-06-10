@@ -4,6 +4,8 @@ window.onload = () => {
   setupExpandMenu.init()
   dropdownBootstrap.init()
   tabEvent.init()
+  viewProduct.init()
+  owlCarousel.init()
 }
 
 const setupTooltip = {
@@ -71,6 +73,35 @@ const setupExpandMenu = {
   }
 }
 
+const owlCarousel = {
+  init: function () {
+    this.setupProductCarousel();
+  },
+  setupProductCarousel: function () {
+    var $owl = $("#product-carousel ").owlCarousel({
+      responsive: {
+        0: {
+          items: 2.5,
+        },
+        768: {
+          items: 3.5,
+        },
+        991: {
+          items: 5,
+        },
+      },
+      loop: false,
+      nav: true,
+      dots: false,
+      margin: 15,
+      navText: [
+        "<img src='./assets/icons/icon-angle-left-blue.svg'>",
+        "<img src='./assets/icons/icon-angle-right-blue.svg'>",
+      ],
+    });
+    $owl.trigger("refresh.owl.carousel");
+  },
+};
 
 const tabEvent = {
 	init: function () {
@@ -93,4 +124,26 @@ const tabEvent = {
 			})
 		}
 	}
+}
+
+
+const viewProduct = {
+  init: function() {
+    this.setup()
+  },
+  setup: function() {
+    const viewBtn = document.querySelectorAll('.list-view-btn')
+    const viewMain = document.querySelector('.section-main-view')
+
+    if (viewMain) {
+      viewBtn.forEach((item) => item.addEventListener('click', () => {
+        viewBtn.forEach(i => i.classList.remove('active'))
+        item.classList.add('active')
+
+        viewMain.classList.remove('grid')
+        viewMain.classList.remove('list')
+        viewMain.classList.add(item.dataset.view)
+      }))
+    }
+  }
 }

@@ -1,0 +1,52 @@
+.section-products-lists 
+  .section-header.desktop.d-flex.justify-content-between.align-items-center 
+    .header-item.filter-title Tối đa 1.500.000đ
+    .header-item.action.d-flex.align-items-center
+      .list-view-btn(data-view="list").active
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <path d="M492,236H144.262c-11.046,0-20,8.954-20,20s8.954,20,20,20H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z "/> <path d="M492,86H144.262c-11.046,0-20,8.954-20,20s8.954,20,20,20H492c11.046,0,20-8.954,20-20S503.046,86,492,86z"/> <path d="M492,386H144.262c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H492c11.046,0,20-8.954,20-20 C512,394.954,503.046,386,492,386z"/> <circle cx="27" cy="106" r="27"/> <circle cx="27" cy="256" r="27"/> <circle cx="27" cy="406" r="27"/> </svg>
+
+      .list-view-btn(data-view="grid")
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 271.673 271.673" style="enable-background:new 0 0 271.673 271.673;" xml:space="preserve"> <path d="M114.939,0H10.449C4.678,0,0,4.678,0,10.449v104.49c0,5.771,4.678,10.449,10.449,10.449h104.49 c5.771,0,10.449-4.678,10.449-10.449V10.449C125.388,4.678,120.71,0,114.939,0z"/> <path d="M261.224,0h-104.49c-5.771,0-10.449,4.678-10.449,10.449v104.49c0,5.771,4.678,10.449,10.449,10.449h104.49 c5.771,0,10.449-4.678,10.449-10.449V10.449C271.673,4.678,266.995,0,261.224,0z"/> <path d="M114.939,146.286H10.449C4.678,146.286,0,150.964,0,156.735v104.49c0,5.771,4.678,10.449,10.449,10.449h104.49 c5.771,0,10.449-4.678,10.449-10.449v-104.49C125.388,150.964,120.71,146.286,114.939,146.286z"/> <path d="M261.224,146.286h-104.49c-5.771,0-10.449,4.678-10.449,10.449v104.49c0,5.771,4.678,10.449,10.449,10.449h104.49 c5.771,0,10.449-4.678,10.449-10.449v-104.49C271.673,150.964,266.995,146.286,261.224,146.286z"/> </svg>
+
+      .line
+
+      .dropdown(data-delay=`{ "show": 500, "hide": 0 }` data-toggle="tooltip" data-placement=`bottom` title=`Google apps`)
+        .button-sort.d-flex.align-items-center(type="button" id=`dropdownSort` data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          span.button-title SẮP XẾP THEO: MẶC ĐỊNH
+          img(src="./assets/icons/icon-caret-down-gray.svg", alt="").button-icon
+          
+        .dropdown-menu.dropdown-sort.dropdown-menu-right(aria-labelledby="dropdownSort")
+          .sort-option-wrapper 
+            .option-item.active Mặc định
+            .option-item Giá - Từ thấp đến cao
+            .option-item Giá - Từ cao xuống thấp
+
+  .section-header.mobile
+    .filter-options.d-flex
+      each item in ['Tối đa 1.500.000đ', '1.500.000đ - 3.500.000đ', '3.500.000đ - 7.000.000đ', 'Trên 7.000.000đ ']
+        .filter-option= item
+
+
+
+  .section-about-page.d-flex.justify-content-end 
+    a(href="#").d-flex.align-items-center
+      |Giới thiệu về trang này
+      img(src="./assets/icons/icon-info-gray.svg", alt="")
+
+  
+  .section-body
+    .section-main-view.list
+      each item in [1,2,3,4,5,6,7,8,9,10]
+        .list-item 
+          .item-image 
+            img(src="./assets/images/image-product-sample.png", alt="")
+          .item-info 
+            a(href="#").item-title Bồn cầu 2 khối INAX Việt Nam giá rẻ men sứ bảo hành 10 năm
+            
+            .item-price 
+              span.price 960.000đ
+              a(href="#").d-flex.justify-content-between.align-items-center
+                |Shoppe
+                img(src="./assets/icons/icon-arrow-square-gray.svg", alt="")
+            p.item-des Chào quý khách ! Do số lượng sản phẩm nhiều cho nên: để đảm bảo giá cả ưu đãi và tốt nhất, cũng như tránh việc quý khách đặt
+

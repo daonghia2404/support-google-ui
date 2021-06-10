@@ -1,0 +1,51 @@
+.sidebar-filter
+  button.filter-btn Xoá tất cả các bộ lọc
+  p Vị trí của bạn: Hà Nội
+  
+  .filter-group
+    h6.sidebar-title.d-flex.justify-content-between
+      span Giá
+      button.filter-btn Xoá
+
+    .filter-lists 
+      each item in ['Tối đa 1.500.000đ', '1.500.000đ - 3.500.000đ', '3.500.000đ - 7.000.000đ', 'Trên 7.000.000đ ']
+        .list-item.d-flex 
+          p.item-label= item
+          .item-action 
+            input(type="radio" name="price")
+
+  .filter-group
+    h6.sidebar-title.d-flex.justify-content-between
+      span Loại
+      button.filter-btn Xoá
+
+    .filter-lists 
+      each item in ['Bồn cầu', 'Vòi sen']
+        .list-item.d-flex 
+          p.item-label= item
+
+      
+  .filter-group
+    h6.sidebar-title.d-flex.justify-content-between
+      span Vận chuyển
+
+    .filter-lists 
+      each item in ['Vận chuyển miễn phí']
+        .list-item.d-flex 
+          p.item-label= item
+          .item-action 
+            input(type="checkbox")
+      
+  .filter-group
+    h6.sidebar-title.d-flex.justify-content-between
+      span Người bán
+
+    .filter-lists 
+      each item in ['Hailinh.vn', 'Hita.com.vn', 'inaxbm.com', 'Shoppe', 'Thiết bị điện Phương Hà']
+        .list-item.d-flex 
+          p.item-label= item
+          .item-action 
+            input(type="checkbox")
+
+    button.filter-btn Thêm
+

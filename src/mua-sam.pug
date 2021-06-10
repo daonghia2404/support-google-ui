@@ -1,0 +1,10 @@
+extends includes/layout/layout.pug
+block pages
+  section.section-shopping-list
+    .section-wrapper.d-flex.flex-wrap 
+      .section-wrapper-item
+        include includes/components/sidebar-filter.pug
+      .section-wrapper-item
+        include includes/pages/section-products-list.pug
+  
+  

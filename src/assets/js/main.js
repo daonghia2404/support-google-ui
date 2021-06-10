@@ -4,6 +4,7 @@ window.onload = () => {
   setupExpandMenu.init()
   dropdownBootstrap.init()
   tabEvent.init()
+  viewProduct.init()
   owlCarousel.init()
 }
 
@@ -80,14 +81,16 @@ const owlCarousel = {
     var $owl = $("#product-carousel ").owlCarousel({
       responsive: {
         0: {
-          items: 1,
+          items: 2.5,
         },
         768: {
+          items: 3.5,
+        },
+        991: {
           items: 5,
         },
       },
       loop: false,
-      mouseDrag: false,
       nav: true,
       dots: false,
       margin: 15,
@@ -121,4 +124,26 @@ const tabEvent = {
 			})
 		}
 	}
+}
+
+
+const viewProduct = {
+  init: function() {
+    this.setup()
+  },
+  setup: function() {
+    const viewBtn = document.querySelectorAll('.list-view-btn')
+    const viewMain = document.querySelector('.section-main-view')
+
+    if (viewMain) {
+      viewBtn.forEach((item) => item.addEventListener('click', () => {
+        viewBtn.forEach(i => i.classList.remove('active'))
+        item.classList.add('active')
+
+        viewMain.classList.remove('grid')
+        viewMain.classList.remove('list')
+        viewMain.classList.add(item.dataset.view)
+      }))
+    }
+  }
 }

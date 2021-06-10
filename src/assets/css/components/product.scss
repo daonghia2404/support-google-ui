@@ -29,6 +29,9 @@
     color: $gray;
     margin: 4px 0;
     @include ellipsis(2);
+    @media (max-width: 575px) {
+      font-size: 13px;
+    }
   }
 
   .product-rating {

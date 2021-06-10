@@ -7,8 +7,13 @@ section.section-grid-product.section-product
       .header-item 
 
     .section-body 
-      .grid-product-main
+      .grid-product-main.desktop
         each item, index in [1,2,3,4,5,6,7,8,9,10,11,12]
           .grid-item(class=`${[3, 5].includes(index) ? 'big' : ''}`)
+            include ../components/product.pug
+
+      .grid-product-main.mobile
+        each item, index in [1,2,3,4,5,6,7,8]
+          .grid-item(class=`${[1,4].includes(index) ? 'big' : ''}`)
             include ../components/product.pug
             
